@@ -8,6 +8,7 @@ from torch import nn
 
 class Conv(nn.Module):
     """ConvUnit"""
+
     def __init__(self,
                  in_channels,
                  out_channels,
@@ -38,6 +39,7 @@ class Conv(nn.Module):
 
 class ResConvBlock(nn.Module):
     """残差卷积模块， 瓶颈结"""
+
     def __init__(self,
                  in_channels,
                  out_channels,
@@ -66,6 +68,7 @@ class ResConvBlock(nn.Module):
 
 class DetectHead(nn.Module):
     """侦测头模块"""
+
     def __init__(self,
                  in_channels,
                  out_channels,
@@ -88,17 +91,15 @@ class ConvSet(nn.Module):
     def __init__(self, in_channels):
         super().__init__()
         self.convset = nn.Sequential(
-            Conv(in_channels, in_channels//2, 1, 1),
-            Conv(in_channels//2, in_channels, 3, 1, 1),
-            Conv(in_channels, in_channels//2, 1, 1),
-            Conv(in_channels//2, in_channels, 3, 1, 1),
-            Conv(in_channels, in_channels//2, 1, 1)
+            Conv(in_channels, in_channels // 2, 1, 1),
+            Conv(in_channels // 2, in_channels, 3, 1, 1),
+            Conv(in_channels, in_channels // 2, 1, 1),
+            Conv(in_channels // 2, in_channels, 3, 1, 1),
+            Conv(in_channels, in_channels // 2, 1, 1)
         )
 
     def forward(self, x):
         return self.convset(x)
-
-
 
 
 if __name__ == '__main__':
