@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>trainimage</folder>
+<filename>14.jpg</filename>
+<path>D:\trainimage\14.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>1600</width>
+    <height>1068</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>狗</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>592</xmin>
+        <ymin>198</ymin>
+        <xmax>1010</xmax>
+        <ymax>864</ymax>
+    </bndbox>
+</object>
+</annotation>

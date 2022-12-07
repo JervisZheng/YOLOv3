@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>trainimage</folder>
+<filename>19.jpg</filename>
+<path>D:\trainimage\19.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>640</width>
+    <height>927</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>大人</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>85</xmin>
+        <ymin>95</ymin>
+        <xmax>300</xmax>
+        <ymax>913</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>大人</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>295</xmin>
+        <ymin>100</ymin>
+        <xmax>535</xmax>
+        <ymax>919</ymax>
+    </bndbox>
+</object>
+</annotation>

@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def cal_iou(box, boxes):
+def or_iou(box, boxes):
     box_area = (box[3] - box[1]) * (box[2] - box[0])
     area = (boxes[:, 3] - boxes[:, 1]) * (boxes[:, 2], box[:, 0])
 
@@ -18,6 +18,5 @@ def cal_iou(box, boxes):
     iou = np.divide(inter, box_area + area - inter)
 
     return iou
-
 
 

@@ -1,6 +1,5 @@
-from iou import cal_iou
+from iou import or_iou
 import numpy as np
-import cv2
 
 
 def nms(boxes, thresh):
@@ -16,7 +15,7 @@ def nms(boxes, thresh):
 
         r_boxes.append(a_box)
 
-        index = np.where(cal_iou(a_box, b_boxes) < thresh)
+        index = np.where(or_iou(a_box, b_boxes) < thresh)
         _boxes = b_boxes[index]
     if _boxes.shape[0] > 0:
         r_boxes.append(_boxes[0])

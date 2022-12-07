@@ -1,4 +1,4 @@
-path: ./dataset
+path: ../dataset/testdata
 train: images/train
 val: images/val
 test:
