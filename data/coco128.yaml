@@ -1,9 +1,0 @@
-path: ../dataset/testdata
-train: images/train
-val: images/val
-test:
-
-names:
-  ['Radius', 'Ulna', 'MCPFirst', 'MCP', 'ProximalPhalanx', 'MiddlePhalanx', 'DistalPhalanx']
-
-
